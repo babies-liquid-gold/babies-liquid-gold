@@ -1,10 +1,10 @@
 "use strict";
 
 //Request user name and store to local storage for page two
-let userName = prompt("Please enter the name you'd like us to call you: ");
+//constructor
 
-localStorage.setItem("userName", userName);
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-
+function UserInformation(name){
+  this.name = name;
+  
+}
 
