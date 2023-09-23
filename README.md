@@ -124,3 +124,7 @@ Monday through Thursday we will merge once every night and on Saturday's we will
 
 We will verbalize when it is time. 
 
+Reference Links:
+
+![WireFrame](img/WireFrame.PNG)
+[Domain Model](https://codex-code102.invisionapp.com/freehand/Domain-Model-fD5wyl2gz)
