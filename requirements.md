@@ -2,7 +2,7 @@
 
 1. What is the vision of this product?
 
-To establish the basic prep work functionality of a future product designed to provide Nic-U babies with breast milk resources by first establishing a user input database.
+To create an app where users will input their breast milk production on a daily rate, be placed in a specific bracket and after a user click receive information to help with their production based on that bracket.
 
 2. What pain point does this project solve?
 
@@ -20,7 +20,7 @@ This will never become a mobile app, it will only be accessible to medical facil
 
 ### MVP
 
-The minimum that this app should accomplish is to take in user input and begin creating an updated chart maintaining the information stored for later use. 
+The minimum that this app should accomplish, take userName input store to local storage and display it on their daily tracking page. Take in user input through a form, store and maintain user input, while placing the users information inside local storage, output all stored data for daily tracking and allow the user to click an image that cooresponds to relevant information to help daily production rates.
 
 #### Data Flow
 
