@@ -41,11 +41,13 @@ UserInformation.prototype.render = function(){
   form.appendChild(displayedName);
   
 
-  const displayedProductionValues = document.createElement("p");
-  displayedProductionValues.textContent = this.productionValueArray;
+  
 };
 
-
+let retrievedName = localStorage.getItem("user");
+console.log(retrievedName);
+const user1 = new UserInformation(retrievedName);
+user1.render();
 
 
 
