@@ -20,7 +20,8 @@
             <a class="menu" href="/aboutus.html">Meet the Team</a>
         </div>
     </nav>
-<div id="username-input"></div>
+<div id="username-input">
+  </div>
 <div id="greeting">
     <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -37,7 +38,46 @@
     ratione quis aut recusandae.
 </p>
 </div>
-<footer>
+
+  <div id="userName-container">
+    <form>
+      <fieldset>
+        <legend>
+          Please Enter your name and milk production for today: 
+        </legend>
+
+        <label for = "username">Name: </label>
+        <input type = "text" id = "name" name = "username">
+
+        <label for = "dailyProduction"> Daily Milk Production in ML:</label>
+        <input type = "text" id = "productionValue" name = "milkValue">
+
+        <label for = "dailyDate"> Date: </label>
+        <input type = "date" id = "dateValue" name = "date">
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+  </div>
+  
+
+  <input id="milk-production-container"></input>
+  <div class="milk-production-img">
+    <img src="">
+   </div>
+   <div class="milk-production-img">
+    <img src="">
+    </div>
+    <div class="milk-production-img">
+    <img src="">
+    </div>
+  <div id="target-info">
+
+  </div>
+  
+  <footer>
+
     <span>
          &copy;2023 Babie's Liquid Gold. All rights reserved.
     </span>
