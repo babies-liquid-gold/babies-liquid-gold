@@ -19,8 +19,6 @@ This is why Babies Liquid Gold will play a vital role in making that happen. It 
 2. HTML
 3. CSS
 
-![Alt text](image.png)
-
 Reference Links:
 
 ![WireFrame](img/WireFrame.PNG)
