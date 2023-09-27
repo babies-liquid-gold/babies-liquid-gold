@@ -21,8 +21,6 @@ function infoLog(event) {
   let dateValue = `Today's Date: ${dateInput.value}`;
   localStorage.setItem("Date", dateValue);
 
-  
-
   const inputName = document.createElement("p");
   const inputMilkValue = document.createElement("p");
   const inputDate = document.createElement("p");
@@ -37,12 +35,11 @@ function infoLog(event) {
     const lowLevel = document.createElement("p");
     lowLevel.textContent = `Your milk production is ${productionInput.value} and is considered low, please click the low production image below.`;
     inputMilkValue.appendChild(lowLevel);
-  }else if(productionInput.value > 19 && productionInput.value < 25)
-  {
+  } else if (productionInput.value > 19 && productionInput.value < 25) {
     const mediumLevel = document.createElement("p");
     mediumLevel.textContent = `Your milk production is ${productionInput.value} and is considered medium, please click the medium production image below`;
     inputMilkValue.appendChild(mediumLevel);
-  }else if(productionInput.value > 25){
+  } else if (productionInput.value > 25) {
     const highLevel = document.createElement("p");
     highLevel.textContent = `Your milk production is ${productionInput.value} and is considered high, please click the high production image below`;
     inputMilkValue.appendChild(highLevel);
@@ -69,9 +66,11 @@ UserInformation.prototype.render = function () {
   globalVariables.form.appendChild(displayedName);
   displayedName.appendChild(displayedValue);
   displayedValue.appendChild(displayedDated);
-
-  
 };
+//add an event listener function that will display information when user clicks image
+
+//add an event listener call function similar to the one below
+
 globalVariables.form.addEventListener("submit", infoLog);
 //function to render specific information from userInformation
 
