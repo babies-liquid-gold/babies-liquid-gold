@@ -73,6 +73,21 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+
+#para-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color:#f9faf8;
+  position: relative;
+  background: rgba(0, 0, 0, 0.336);
+ 
+  
+}
+
+
 footer{
   display: flex;
   justify-content: center;
