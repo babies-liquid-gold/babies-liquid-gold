@@ -4,26 +4,26 @@ const globalVariables = {
   form: document.getElementById("userName-container"),
   lowMilkContainer: document.getElementById("low-div"),
   mediumMilkContainer: document.getElementById("medium-div"),
-  highMilkContainer: document.getElementById("high-div"),  
+  highMilkContainer: document.getElementById("high-div"),
 };
 
 const lowImage = document.createElement("img");
 const mediumImage = document.createElement("img");
 const highImage = document.createElement("img");
-function displayImages(){
-  lowImage.src = "img/low-milk.png";
+function displayImages() {
+  lowImage.src = "img/taksh-Ss3bXajj-po-unsplash (1).jpg";
   lowImage.alt = "low-milk";
   lowImage.width = 300;
   lowImage.height = 300;
   globalVariables.lowMilkContainer.appendChild(lowImage);
 
-  mediumImage.src = "img/medium-milk.jpg";
+  mediumImage.src = "img/brytny-com-8ggcekgy358-unsplash.jpg";
   mediumImage.alt = "medium-milk";
   mediumImage.width = 300;
   mediumImage.height = 300;
   globalVariables.lowMilkContainer.appendChild(mediumImage);
 
-  highImage.src = "img/high-milk.jpg";
+  highImage.src = "img/minnie-zhou-CO7Ncwg8IxI-unsplash.jpg";
   highImage.alt = "high-milk";
   highImage.width = 300;
   highImage.height = 300;
@@ -31,31 +31,56 @@ function displayImages(){
 }
 displayImages();
 
-function lowImageInfo(){
+function lowImageInfo() {
   const lowInfo = document.createElement("p");
-  lowInfo.textContent = "this is low information";
+  lowInfo.textContent = ` Your milk supply is considered low when you aren't producing enough milk to meet your baby's needs. A good milk output is 25-35 ounces daily.
+       
+  Ways to Increase Milk Production:
+  *Make sure that your baby is latching properly to your breast.
+  *Feed your baby often, at least 8-12 times a day
+  *Stop smoking/ drinking alcohol
+  *Choose birth control that does not contain estrogen
+  *Breastfeed skin to skin, it releases hormones that aid in milk production
+  *Eat a healthy, well balanced diet that is rich in protein, whole grains, leafy green vegetables and legumes/beans. Some herbs such as fennel and fenugreek may increase milk production.
+  
+  Click the link to this recipe that may aid in consistent milk production: 
+  https://detoxinista.com/green-lactation-smoothie/`;
   globalVariables.lowMilkContainer.appendChild(lowInfo);
   localStorage.setItem("lowInfo", lowInfo);
 }
 
-function mediumImageInfo(){
+function mediumImageInfo() {
   const mediumInfo = document.createElement("p");
-  mediumInfo.textContent = "this is medium information";
+  mediumInfo.textContent = ` Your milk supply is considered average when you are producing enough milk to meet your baby’s needs. A good output is 25-35 ounces per day.
+      
+  Ways to Maintain a Good Milk Production:
+  *Make sure that your baby is latching properly to your breast.
+  *Feed your baby often, at least 8-12 times a day
+  *Stop smoking/ drinking alcohol
+  *Choose birth control that does not contain estrogen
+  *Breastfeed skin to skin, it releases hormones that aid in milk production
+  *Eat a healthy, well balanced diet that is rich in protein, whole grains, leafy green vegetables and legumes/beans. Some herbs such as fennel and fenugreek have been said to increase milk production.
+  
+  Click the link to this recipe that may aid in consistent milk production: https://whatmollymade.com/blueberry-lactation-muffins/
+  `;
   globalVariables.lowMilkContainer.appendChild(mediumInfo);
   localStorage.setItem("mediumInfo", mediumInfo);
 }
 
-function highImageInfo(){
+function highImageInfo() {
   const highInfo = document.createElement("p");
-  highInfo.textContent = "this is high information";
+  highInfo.textContent = `Your milk supply is considered high when you continue to make more milk than their baby needs. Oversupply can make breastfeeding difficult for both you and your baby. A good output is 25-35 ounces per day. If you believe that you have an oversupply of milk, you should speak with your doctor. They will be able to assist you with methods and ways to decrease milk production.
+  Ways to Decrease Milk Production:
+  *Feed your baby from only one breast at each feed.
+  *Space feeds out — at least 2 ½ hours apart.
+  *At your next feed, change to your other breast.Continue this pattern for a few days.
+  *You might need to hand express a small amount from the unused breast to relieve pressure or discomfort. Don’t empty that breast — the leftover milk in the unused breast triggers the reduction in your milk production.`;
   globalVariables.lowMilkContainer.appendChild(highInfo);
-  localStorage.setItem("highInfo",highInfo);
+  localStorage.setItem("highInfo", highInfo);
 }
 lowImage.addEventListener("click", lowImageInfo);
 mediumImage.addEventListener("click", mediumImageInfo);
-highImage.addEventListener("click",highImageInfo);
-
-
+highImage.addEventListener("click", highImageInfo);
 
 //function event designed to locally store userName, production and date when submit is clicked
 function infoLog(event) {
@@ -73,7 +98,7 @@ function infoLog(event) {
   let dateInput = document.getElementById("dateValue");
   let dateValue = `Today's Date: ${dateInput.value}`;
   localStorage.setItem("Date", dateValue);
-  
+
   const inputName = document.createElement("p");
   const inputMilkValue = document.createElement("p");
   const inputDate = document.createElement("p");
@@ -112,15 +137,13 @@ UserInformation.prototype.render = function () {
   const displayedName = document.createElement("p");
   const displayedValue = document.createElement("p");
   const displayedDated = document.createElement("p");
-  
+
   displayedName.textContent = `${this.name}`;
   displayedValue.textContent = `${this.productionValue}`;
   displayedDated.textContent = `${this.productionDate}`;
   globalVariables.form.appendChild(displayedName);
   displayedName.appendChild(displayedValue);
   displayedValue.appendChild(displayedDated);
-  
- 
 };
 //add an event listener function that will display information when user clicks image
 
@@ -140,9 +163,6 @@ function persistData() {
   );
   user1.render();
 }
-
-
-
 
 //retrieves and stores information from local storage and places it in instance of
 //userInformation constructor that's been named user1
