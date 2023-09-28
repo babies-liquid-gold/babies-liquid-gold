@@ -2,7 +2,60 @@
 
 const globalVariables = {
   form: document.getElementById("userName-container"),
+  lowMilkContainer: document.getElementById("low-div"),
+  mediumMilkContainer: document.getElementById("medium-div"),
+  highMilkContainer: document.getElementById("high-div"),  
 };
+
+const lowImage = document.createElement("img");
+const mediumImage = document.createElement("img");
+const highImage = document.createElement("img");
+function displayImages(){
+  lowImage.src = "img/low-milk.png";
+  lowImage.alt = "low-milk";
+  lowImage.width = 300;
+  lowImage.height = 300;
+  globalVariables.lowMilkContainer.appendChild(lowImage);
+
+  mediumImage.src = "img/medium-milk.jpg";
+  mediumImage.alt = "medium-milk";
+  mediumImage.width = 300;
+  mediumImage.height = 300;
+  globalVariables.lowMilkContainer.appendChild(mediumImage);
+
+  highImage.src = "img/high-milk.jpg";
+  highImage.alt = "high-milk";
+  highImage.width = 300;
+  highImage.height = 300;
+  globalVariables.lowMilkContainer.appendChild(highImage);
+}
+displayImages();
+
+function lowImageInfo(){
+  const lowInfo = document.createElement("p");
+  lowInfo.textContent = "this is low information";
+  globalVariables.lowMilkContainer.appendChild(lowInfo);
+  localStorage.setItem("lowInfo", lowInfo);
+}
+
+function mediumImageInfo(){
+  const mediumInfo = document.createElement("p");
+  mediumInfo.textContent = "this is medium information";
+  globalVariables.lowMilkContainer.appendChild(mediumInfo);
+  localStorage.setItem("mediumInfo", mediumInfo);
+}
+
+function highImageInfo(){
+  const highInfo = document.createElement("p");
+  highInfo.textContent = "this is high information";
+  globalVariables.lowMilkContainer.appendChild(highInfo);
+  localStorage.setItem("highInfo",highInfo);
+}
+lowImage.addEventListener("click", lowImageInfo);
+mediumImage.addEventListener("click", mediumImageInfo);
+highImage.addEventListener("click",highImageInfo);
+
+
 
 //function event designed to locally store userName, production and date when submit is clicked
 function infoLog(event) {
@@ -20,7 +73,7 @@ function infoLog(event) {
   let dateInput = document.getElementById("dateValue");
   let dateValue = `Today's Date: ${dateInput.value}`;
   localStorage.setItem("Date", dateValue);
-
+  
   const inputName = document.createElement("p");
   const inputMilkValue = document.createElement("p");
   const inputDate = document.createElement("p");
@@ -59,13 +112,15 @@ UserInformation.prototype.render = function () {
   const displayedName = document.createElement("p");
   const displayedValue = document.createElement("p");
   const displayedDated = document.createElement("p");
-
+  
   displayedName.textContent = `${this.name}`;
   displayedValue.textContent = `${this.productionValue}`;
   displayedDated.textContent = `${this.productionDate}`;
   globalVariables.form.appendChild(displayedName);
   displayedName.appendChild(displayedValue);
   displayedValue.appendChild(displayedDated);
+  
+ 
 };
 //add an event listener function that will display information when user clicks image
 
@@ -85,6 +140,9 @@ function persistData() {
   );
   user1.render();
 }
+
+
+
 
 //retrieves and stores information from local storage and places it in instance of
 //userInformation constructor that's been named user1
