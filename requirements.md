@@ -2,7 +2,7 @@
 
 1. What is the vision of this product?
 
-To create an app where users will input their breast milk production on a daily rate, be placed in a specific bracket and after a user click receive information to help with their production based on that bracket.
+To create an app where users will input their breast milk production on a daily rate, be placed in a specific bracket (high, moderate, and low) and after a user click receive information to help with their production based on that bracket.
 
 2. What pain point does this project solve?
 
