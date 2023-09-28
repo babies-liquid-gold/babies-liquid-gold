@@ -36,7 +36,7 @@ body{
   font-size: 40px;
  
 }
-video {
+video .background {
   object-fit: cover;
   width: 100%;
   min-height:1200px;
@@ -76,13 +76,15 @@ a:hover {
 
 #para-container{
   flex-wrap: wrap;
-  padding: 5px;
-  color:#f9faf8;
+  padding: 25px;
+  
   min-height: 50em;
   background: rgba(179, 17, 17, 0.336);
   margin: 10px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
   height: 30em;
+  text-align:justify;
 }
 h2{
   color: rgba(72, 62, 181, 0.636);
@@ -107,6 +109,20 @@ section img{
   width: 10em;
   margin-left: 42%;
   margin-right: 50%;
+  position: relative;
+  animation-name: motion;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse; 
+  border-radius: 10%;
+}
+
+@keyframes motion {
+  0%   {background-color:rgba(255, 0, 0, 0.176); left:0px; top:0px;}
+  25%  {background-color:rgba(255, 255, 0, 0.133); left:200px; top:0px;}
+  50%  {background-color:rgba(0, 0, 255, 0.187); left:200px; top:200px;}
+  75%  {background-color:rgba(0, 128, 0, 0.132); left:0px; top:200px;}
+  100% {background-color:rgba(255, 0, 0, 0.121); left:0px; top:0px;}
 }
 .team{
   border: 3px solid seashell;
@@ -115,6 +131,31 @@ section img{
   font-family: 'Courier New', Courier, monospace;
   font-size: x-large;
   padding: 20px;
+}
+#img-wrap{
+  overflow: hidden;
+  position: relative;
+  height: 20%;
+}
+.tagline{
+  color: black;
+  text-align: center;
+}
+#about-pic {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.content{
+  position: relative;
+}
+h3{
+  color: rgba(226, 211, 48, 0.871);
+  text-align: center;
+  font-size: 40px;
 }
 footer{
   display: flex;
