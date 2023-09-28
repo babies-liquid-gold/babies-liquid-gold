@@ -99,16 +99,30 @@ h2{
   margin: 5px;
  padding: 8px;
 }
+
+p{
+color: rgb(80, 80, 132);
+}
+section img{
+  width: 10em;
+  margin-left: 42%;
+  margin-right: 50%;
+}
+.team{
+  border: 3px solid seashell;
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  padding: 20px;
+}
 footer{
   display: flex;
   justify-content: center;
-  background: rgba(50, 50, 93, 0.664);
-  color: #e5e7eb;
+  background: rgba(50, 50, 93, 0.191);
+  color: #2e1d6d;
   position: absolute; 
   bottom: 0; 
   left: 0; 
   right: 0;
-}
-p{
-color: rgb(80, 80, 132);
 }
