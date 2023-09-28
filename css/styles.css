@@ -77,14 +77,15 @@ a:hover {
 #para-container{
   flex-wrap: wrap;
   padding: 25px;
-  
+  width: 75%;
   min-height: 50em;
   background: rgba(179, 17, 17, 0.336);
-  margin: 10px;
+  margin: auto;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: larger;
-  height: 30em;
+  height:auto;
   text-align:justify;
+ 
 }
 h2{
   color: rgba(72, 62, 181, 0.636);
@@ -93,13 +94,16 @@ h2{
 }
 #greeting{
  margin: 5px;
- padding: 8px;
- height: 12rem;
+ padding: 15px;
+ 
+ 
  min-height: 18rem;
+ line-height: 1.6;
 }
-#info-container{
-  margin: 5px;
- padding: 8px;
+
+
+h2 {
+  padding-bottom: 20px;
 }
 
 p{
@@ -135,7 +139,7 @@ section img{
 #img-wrap{
   overflow: hidden;
   position: relative;
-  height: 20%;
+  height: 25em;
 }
 .tagline{
   color: black;
@@ -147,7 +151,6 @@ section img{
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
 }
 .content{
   position: relative;
