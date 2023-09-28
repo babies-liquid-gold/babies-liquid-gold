@@ -73,6 +73,32 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+
+#para-container{
+  flex-wrap: wrap;
+  padding: 5px;
+  color:#f9faf8;
+  min-height: 50em;
+  background: rgba(179, 17, 17, 0.336);
+  margin: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  height: 30em;
+}
+h2{
+  color: rgba(72, 62, 181, 0.636);
+  text-align: center;
+  height: 5rem;
+}
+#greeting{
+ margin: 5px;
+ padding: 8px;
+ height: 12rem;
+ min-height: 18rem;
+}
+#info-container{
+  margin: 5px;
+ padding: 8px;
+}
 footer{
   display: flex;
   justify-content: center;
