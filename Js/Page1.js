@@ -168,3 +168,6 @@ function persistData() {
 //userInformation constructor that's been named user1
 
 persistData();
+
+
+// To anyone who sees this section of the code. I'd like to say that I'm grateful for all of the knowledge I have received from both Thomas and Dwight. I'm also grateful for the people i've met and learned from. I encourage you all to pursue whatever it is you desire, and do your best going forward.
