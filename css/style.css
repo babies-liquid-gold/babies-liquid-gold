@@ -1,0 +1,14 @@
+/* about home page*/
+
+body {
+    background-color:#FDC921;
+}
+
+.header {
+    background-color:  #114B5F;
+    color: #FDC921;
+    font-style: oblique;
+    display: flex;
+height: 75px;
+margin: 0 auto;
+}
