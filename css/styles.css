@@ -187,6 +187,12 @@ h3{
   text-align: center;
   font-size: 40px;
 }
+#form-container{
+ border:  3px solid salmon;
+ padding: 20px;
+ width: 50%;
+ margin: auto;
+}
 #userName-container{
   margin-top: 20px;
   text-align: center;
@@ -196,12 +202,16 @@ h3{
   margin: auto;
 }
 #output-container{
+  display: flex;
+  flex-direction: row;
   width: 50%;
   margin: auto;
   padding: 10px;
-  
 }
-
+#output-container div{
+  padding: 10px;
+  margin: 10px;
+}
 footer{
   display: flex;
   justify-content: center;
