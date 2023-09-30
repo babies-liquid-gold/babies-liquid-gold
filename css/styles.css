@@ -1,12 +1,13 @@
 html {
   min-width: 490px;
   height: 100%;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body{
-   height: 100%;
-   overflow-x: hidden;  
+  height: 100%;
+  overflow-x:inherit; 
+  background-color: rgba(229, 237, 21, 0.881);
 }
 
 .navbar{
@@ -17,8 +18,7 @@ body{
   justify-content: center;
   background: radial-gradient(circle at center,rgba(255, 200, 0, 0.307),rgba(0, 0, 255, 0.465),rgba(128, 0, 75, 0.501));
   padding: 10px;
-  margin-bottom: 10px;
-
+  margin: 0;
 }
 .menu{
   padding: 6px;
@@ -160,6 +160,19 @@ h3{
   text-align: center;
   font-size: 40px;
 }
+#userName-container{
+  text-align: center;
+  width:50%;
+  display:flexbox;
+  align-self: center;
+  margin: auto;
+  border: 2px solid pink;
+}
+#low-div{
+padding: 5px;
+border: 2px solid pink ;
+}
+
 footer{
   display: flex;
   justify-content: center;
