@@ -15,7 +15,6 @@ function displayImages() {
   lowImage.alt = "low-milk";
   lowImage.width = 300;
   lowImage.height = 300;
-  lowImage.padding= 3;
   globalVariables.lowMilkContainer.appendChild(lowImage);
 
   mediumImage.src = "img/brytny-com-8ggcekgy358-unsplash.jpg";
