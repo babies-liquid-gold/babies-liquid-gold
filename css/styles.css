@@ -188,10 +188,12 @@ h3{
   font-size: 40px;
 }
 #form-container{
- border:  3px solid salmon;
- padding: 20px;
+ border: 3px solid rgba(128, 128, 128, 0.145);
+ border-radius: 5%;
+ padding: 10px;
  width: 50%;
  margin: auto;
+ height: auto;
 }
 #userName-container{
   margin-top: 20px;
